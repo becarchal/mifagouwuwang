@@ -1,0 +1,2795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>米发购物网-商品搜索</title>
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/search.css">
+	<!--[if IE 6]>
+  <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+  <script type="text/javascript" src="js/ie6Fixpng.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<div class="headBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="fl">
+                <a href="#" class="collection">收藏本站</a>
+            </div>
+            <ul class="fr">
+                
+                <div class="login">
+                    欢迎来到米发购物网！
+                    <a id="login" title="打开" href="javascript:;">登陆</a>
+                    <div class="mifa-popover-lg">
+                        <div class="mifa-poptit">
+                            <a href="javascript:;" title="关闭" class="close">×</a>
+                            <h3>米发 购物</h3>
+                        </div>
+                        <div class="mifa-popbod dform">
+                            <form id="loginform" class="mifa-signin" name="loginform" action="" method="post">
+                                <ol>
+                                    <li>
+                                        <h4>请先登录！</h4>
+                                    </li>
+                                    <li>
+                                        <label class="labe" for="username"> <strong>用户名：</strong>
+                                        </label>
+                                        <div class="input">
+                                            <input class="ipt" type="text" name="username" id="username" placeholder="米发账号" size="20"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="labe" for="pwd"> <strong>密码：</strong>
+                                        </label>
+                                        <div class="input">
+                                            <input class="ipt" type="password" name="pwd" id="pwd" placeholder="***" size="20"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " />
+                                    </li>
+                                </ol>
+                            </form>
+                        </div>
+                    </div>
+                    <a id="register" title="打开" href="javascript:;">免费注册</a>
+                    <div class="mifa-popover-rg">
+                        <div class="mifa-poptit">
+                            <a href="javascript:;" title="关闭" class="close">×</a>
+                            <h3>米发 购物</h3>
+                        </div>
+                        <div class="mifa-popbod dform">
+                            <form id="registerform" class="mifa-signin" name="registerform" action="" method="post">
+                                <ol>
+                                    <li>
+                                        <h4>免费注册</h4>
+                                    </li>
+                                    <li>
+                                        <label class="labe" for="username1" >
+                                            <strong>用户名：</strong>
+                                        </label>
+                                        <div class="input">
+                                            <input class="ipt" type="text" name="username1"  placeholder="mifazhanghao" size="20" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="labe" for="pwd1" >
+                                            <strong>密码：</strong>
+                                        </label>
+                                        <div class="input">
+                                            <input class="ipt" type="password" name="pwd1" id="pwd1" placeholder="***" size="20" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="labe" for="pwdr1" >
+                                            <strong>请再次输入密码：</strong>
+                                        </label>
+                                        <div class="input">
+                                            <input class="ipt" type="password" name="pwdr1" id="pwdr1" placeholder="***" size="20" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input class="btn btn-primary" type="submit" name="submit" value=" 提交注册 " />
+                                    </li>
+                                </ol>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mifa-popover-mask"></div>
+                </div>
+                <li class="li">   
+                    <div class="dd">
+                    <a href="">我的订单</a>
+                    </div>
+                </li>
+                <li class="li">
+                    <div class="mymifa">
+                        <a class="block" href="#">我的米发</a>
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="index.html">
+                    <img width="162" height="60" alt="" src="images/logo.png"></a>
+            </div>
+            <div class="hearder-extra">
+                <div class="shopCar fr">
+                    <span class="shop_text fl">购物车</span>
+                    <span class="shop_num fl">0</span>
+                </div>
+                <div class="search fr">
+                    <form  class="searchform clearfix" action="seach_product.html" method="get" accept-charset="utf-8">
+                        <div class="search_box clearfix">
+                            <input type="text" class="search_text fl"/>    
+                            <button type="submit" class="search_btn fr" value="搜   索">搜  索</button>    
+                        </div>
+                    </form>
+                </div>
+                <div class="areaSelector" id="areaSelector">
+                    <h3 id="h3">南京
+                    <i id="ii">&#xe601;</i>
+                    </h3>
+                    <div class="j_Address cselector" id="cselector" style="display: none;">
+                        <div class="wrapper hc">
+                            <span class="head">热门城市：</span>
+                            <p class="hot-cities">
+                                <span class="cities " index="0" code="110100">北京</span>
+                                <span class="cities " index="1" code="310100">上海</span>
+                                <span class="cities " index="2" code="330100">杭州</span>
+                                <span class="cities " index="3" code="440100">广州</span>
+                                <span class="cities " index="4" code="120100">天津</span>
+                                <span class="cities last " index="5" code="320500">苏州</span>
+                                <span class="cities " index="6" code="510100">成都</span>
+                                <span class="cities " index="7" code="440300">深圳</span>
+                                <span class="cities " index="8" code="320100">南京</span>
+                                <span class="cities " index="9" code="500100">重庆</span>
+                                <span class="cities " index="10" code="360100">南昌</span>
+                                <span class="cities last last" index="11" code="420100">武汉</span>
+                            </p>
+                        </div>
+                        <div class="areapart" id="areapart">
+                            <p id="letters" class="letters">
+                                <span class="J_tab active">ABCDE</span>
+                                <span class="J_tab">FGHJ</span>
+                                <span class="J_tab">KLMNP</span>
+                                <span class="J_tab">QRSTW</span>
+                                <span class="J_tab">XYZ</span>
+                            </p>
+                            <div class="J_blk_ABCDE J_blk_tab tab">
+                                <div class="wrapper">
+                                    <span class="letter-title">A</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="152900">阿拉善</span>
+                                        <span class="cities " index="1" code="210300">鞍山</span>
+                                        <span class="cities " index="2" code="340800">安庆</span>
+                                        <span class="cities " index="3" code="410500">安阳</span>
+                                        <span class="cities " index="4" code="513200">阿坝</span>
+                                        <span class="cities last " index="5" code="520400">安顺</span>
+                                        <span class="cities head " index="6" code="610900">安康</span>
+                                        <span class="cities " index="7" code="654300">阿勒泰</span>
+                                        <span class="cities " index="8" code="659002">阿拉尔</span>
+                                        <span class="cities " index="9" code="152900">阿拉善</span>
+                                        <span class="cities last" index="10" code="210300">鞍山</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">B</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="110100">北京</span>
+                                        <span class="cities " index="1" code="130600">保定</span>
+                                        <span class="cities " index="2" code="150200">包头</span>
+                                        <span class="cities " index="3" code="150800">巴彦淖尔</span>
+                                        <span class="cities " index="4" code="210500">本溪</span>
+                                        <span class="cities last " index="5" code="220600">白山</span>
+                                        <span class="cities head " index="6" code="220800">白城</span>
+                                        <span class="cities " index="7" code="340300">蚌埠</span>
+                                        <span class="cities " index="8" code="341600">亳州</span>
+                                        <span class="cities " index="9" code="371600">滨州</span>
+                                        <span class="cities " index="10" code="450500">北海</span>
+                                        <span class="cities last " index="11" code="451000">百色</span>
+                                        <span class="cities head " index="12" code="469030">白沙</span>
+                                        <span class="cities " index="13" code="469035">保亭</span>
+                                        <span class="cities " index="14" code="511900">巴中</span>
+                                        <span class="cities " index="15" code="522400">毕节</span>
+                                        <span class="cities " index="16" code="530500">保山</span>
+                                        <span class="cities last " index="17" code="610300">宝鸡</span>
+                                        <span class="cities head " index="18" code="620400">白银</span>
+                                        <span class="cities " index="19" code="652700">博尔塔拉</span>
+                                        <span class="cities " index="20" code="652800">巴音郭楞</span>
+                                        <span class="cities " index="21" code="450500">北海</span>
+                                        <span class="cities " index="22" code="451000">百色</span>
+                                        <span class="cities last " index="23" code="469030">白沙</span>
+                                        <span class="cities head " index="24" code="469035">保亭</span>
+                                        <span class="cities " index="25" code="110100">北京</span>
+                                        <span class="cities " index="26" code="130600">保定</span>
+                                        <span class="cities " index="27" code="150200">包头</span>
+                                        <span class="cities " index="28" code="150800">巴彦淖尔</span>
+                                        <span class="cities last " index="29" code="210500">本溪</span>
+                                        <span class="cities head " index="30" code="220600">白山</span>
+                                        <span class="cities " index="31" code="220800">白城</span>
+                                        <span class="cities last" index="32" code="371600">滨州</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">C</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130800">承德</span>
+                                        <span class="cities " index="1" code="130900">沧州</span>
+                                        <span class="cities " index="2" code="140400">长治</span>
+                                        <span class="cities " index="3" code="150400">赤峰</span>
+                                        <span class="cities " index="4" code="211300">朝阳</span>
+                                        <span class="cities last " index="5" code="220100">长春</span>
+                                        <span class="cities head " index="6" code="320400">常州</span>
+                                        <span class="cities " index="7" code="341100">滁州</span>
+                                        <span class="cities " index="8" code="341700">池州</span>
+                                        <span class="cities " index="9" code="430100">长沙</span>
+                                        <span class="cities " index="10" code="430700">常德</span>
+                                        <span class="cities last " index="11" code="431000">郴州</span>
+                                        <span class="cities head " index="12" code="445100">潮州</span>
+                                        <span class="cities " index="13" code="451400">崇左</span>
+                                        <span class="cities " index="14" code="469027">澄迈</span>
+                                        <span class="cities " index="15" code="469031">昌江</span>
+                                        <span class="cities " index="16" code="500100">重庆</span>
+                                        <span class="cities last " index="17" code="510100">成都</span>
+                                        <span class="cities head " index="18" code="532300">楚雄</span>
+                                        <span class="cities " index="19" code="652300">昌吉</span>
+                                        <span class="cities " index="20" code="445100">潮州</span>
+                                        <span class="cities " index="21" code="451400">崇左</span>
+                                        <span class="cities " index="22" code="469027">澄迈</span>
+                                        <span class="cities last " index="23" code="469031">昌江</span>
+                                        <span class="cities head " index="24" code="130800">承德</span>
+                                        <span class="cities " index="25" code="130900">沧州</span>
+                                        <span class="cities " index="26" code="140400">长治</span>
+                                        <span class="cities " index="27" code="150400">赤峰</span>
+                                        <span class="cities " index="28" code="211300">朝阳</span>
+                                        <span class="cities last last" index="29" code="220100">长春</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">D</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="140200">大同</span>
+                                        <span class="cities " index="1" code="210200">大连</span>
+                                        <span class="cities " index="2" code="210600">丹东</span>
+                                        <span class="cities " index="3" code="230600">大庆</span>
+                                        <span class="cities " index="4" code="232700">大兴安岭</span>
+                                        <span class="cities last " index="5" code="370500">东营</span>
+                                        <span class="cities head " index="6" code="371400">德州</span>
+                                        <span class="cities " index="7" code="441900">东莞</span>
+                                        <span class="cities " index="8" code="469003">儋州</span>
+                                        <span class="cities " index="9" code="469007">东方</span>
+                                        <span class="cities " index="10" code="469025">定安</span>
+                                        <span class="cities last " index="11" code="510600">德阳</span>
+                                        <span class="cities head " index="12" code="511700">达州</span>
+                                        <span class="cities " index="13" code="532900">大理</span>
+                                        <span class="cities " index="14" code="533100">德宏</span>
+                                        <span class="cities " index="15" code="533400">迪庆</span>
+                                        <span class="cities " index="16" code="621100">定西</span>
+                                        <span class="cities last " index="17" code="441900">东莞</span>
+                                        <span class="cities head " index="18" code="469003">儋州</span>
+                                        <span class="cities " index="19" code="469007">东方</span>
+                                        <span class="cities " index="20" code="469025">定安</span>
+                                        <span class="cities " index="21" code="140200">大同</span>
+                                        <span class="cities " index="22" code="210200">大连</span>
+                                        <span class="cities last " index="23" code="210600">丹东</span>
+                                        <span class="cities head " index="24" code="230600">大庆</span>
+                                        <span class="cities " index="25" code="232700">大兴安岭</span>
+                                        <span class="cities " index="26" code="370500">东营</span>
+                                        <span class="cities last" index="27" code="371400">德州</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">E</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="150600">鄂尔多斯</span>
+                                        <span class="cities " index="1" code="420700">鄂州</span>
+                                        <span class="cities " index="2" code="422800">恩施</span>
+                                        <span class="cities last" index="3" code="150600">鄂尔多斯</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="J_blk_FGHJ J_blk_tab tab hide">
+                                <div class="wrapper">
+                                    <span class="letter-title">F</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="210400">抚顺</span>
+                                        <span class="cities " index="1" code="210900">阜新</span>
+                                        <span class="cities " index="2" code="341200">阜阳</span>
+                                        <span class="cities " index="3" code="350100">福州</span>
+                                        <span class="cities " index="4" code="361000">抚州</span>
+                                        <span class="cities last " index="5" code="440600">佛山</span>
+                                        <span class="cities head " index="6" code="450600">防城港</span>
+                                        <span class="cities " index="7" code="440600">佛山</span>
+                                        <span class="cities " index="8" code="450600">防城港</span>
+                                        <span class="cities " index="9" code="210400">抚顺</span>
+                                        <span class="cities last" index="10" code="210900">阜新</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">G</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="360700">赣州</span>
+                                        <span class="cities " index="1" code="440100">广州</span>
+                                        <span class="cities " index="2" code="450300">桂林</span>
+                                        <span class="cities " index="3" code="450800">贵港</span>
+                                        <span class="cities " index="4" code="510800">广元</span>
+                                        <span class="cities last " index="5" code="511600">广安</span>
+                                        <span class="cities head " index="6" code="513300">甘孜</span>
+                                        <span class="cities " index="7" code="520100">贵阳</span>
+                                        <span class="cities " index="8" code="623000">甘南</span>
+                                        <span class="cities " index="9" code="640400">固原</span>
+                                        <span class="cities " index="10" code="440100">广州</span>
+                                        <span class="cities last " index="11" code="450300">桂林</span>
+                                        <span class="cities head last" index="12" code="450800">贵港</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">H</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130400">邯郸</span>
+                                        <span class="cities " index="1" code="131100">衡水</span>
+                                        <span class="cities " index="2" code="150100">呼和浩特</span>
+                                        <span class="cities " index="3" code="150700">呼伦贝尔</span>
+                                        <span class="cities " index="4" code="211400">葫芦岛</span>
+                                        <span class="cities last " index="5" code="230100">哈尔滨</span>
+                                        <span class="cities head " index="6" code="230400">鹤岗</span>
+                                        <span class="cities " index="7" code="231100">黑河</span>
+                                        <span class="cities " index="8" code="320800">淮安</span>
+                                        <span class="cities " index="9" code="330100">杭州</span>
+                                        <span class="cities " index="10" code="330500">湖州</span>
+                                        <span class="cities last " index="11" code="340100">合肥</span>
+                                        <span class="cities head " index="12" code="340400">淮南</span>
+                                        <span class="cities " index="13" code="340600">淮北</span>
+                                        <span class="cities " index="14" code="341000">黄山</span>
+                                        <span class="cities " index="15" code="371700">菏泽</span>
+                                        <span class="cities " index="16" code="410600">鹤壁</span>
+                                        <span class="cities last " index="17" code="420200">黄石</span>
+                                        <span class="cities head " index="18" code="421100">黄冈</span>
+                                        <span class="cities " index="19" code="430400">衡阳</span>
+                                        <span class="cities " index="20" code="431200">怀化</span>
+                                        <span class="cities " index="21" code="441300">惠州</span>
+                                        <span class="cities " index="22" code="441600">河源</span>
+                                        <span class="cities last " index="23" code="451100">贺州</span>
+                                        <span class="cities head " index="24" code="451200">河池</span>
+                                        <span class="cities " index="25" code="460100">海口</span>
+                                        <span class="cities " index="26" code="532500">红河</span>
+                                        <span class="cities " index="27" code="610700">汉中</span>
+                                        <span class="cities " index="28" code="652200">哈密</span>
+                                        <span class="cities last " index="29" code="441300">惠州</span>
+                                        <span class="cities head " index="30" code="441600">河源</span>
+                                        <span class="cities " index="31" code="451100">贺州</span>
+                                        <span class="cities " index="32" code="451200">河池</span>
+                                        <span class="cities " index="33" code="460100">海口</span>
+                                        <span class="cities " index="34" code="130400">邯郸</span>
+                                        <span class="cities last " index="35" code="131100">衡水</span>
+                                        <span class="cities head " index="36" code="150100">呼和浩特</span>
+                                        <span class="cities " index="37" code="150700">呼伦贝尔</span>
+                                        <span class="cities " index="38" code="211400">葫芦岛</span>
+                                        <span class="cities " index="39" code="230100">哈尔滨</span>
+                                        <span class="cities " index="40" code="230400">鹤岗</span>
+                                        <span class="cities last " index="41" code="231100">黑河</span>
+                                        <span class="cities head last" index="42" code="371700">菏泽</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">J</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="140500">晋城</span>
+                                        <span class="cities " index="1" code="140700">晋中</span>
+                                        <span class="cities " index="2" code="210700">锦州</span>
+                                        <span class="cities " index="3" code="220200">吉林</span>
+                                        <span class="cities " index="4" code="230300">鸡西</span>
+                                        <span class="cities last " index="5" code="230800">佳木斯</span>
+                                        <span class="cities head " index="6" code="330400">嘉兴</span>
+                                        <span class="cities " index="7" code="330700">金华</span>
+                                        <span class="cities " index="8" code="360200">景德镇</span>
+                                        <span class="cities " index="9" code="360400">九江</span>
+                                        <span class="cities " index="10" code="360800">吉安</span>
+                                        <span class="cities last " index="11" code="370100">济南</span>
+                                        <span class="cities head " index="12" code="370800">济宁</span>
+                                        <span class="cities " index="13" code="410800">焦作</span>
+                                        <span class="cities " index="14" code="410881">济源</span>
+                                        <span class="cities " index="15" code="420800">荆门</span>
+                                        <span class="cities " index="16" code="421000">荆州</span>
+                                        <span class="cities last " index="17" code="440700">江门</span>
+                                        <span class="cities head " index="18" code="445200">揭阳</span>
+                                        <span class="cities " index="19" code="620200">嘉峪关</span>
+                                        <span class="cities " index="20" code="620300">金昌</span>
+                                        <span class="cities " index="21" code="620900">酒泉</span>
+                                        <span class="cities " index="22" code="440700">江门</span>
+                                        <span class="cities last " index="23" code="445200">揭阳</span>
+                                        <span class="cities head " index="24" code="140500">晋城</span>
+                                        <span class="cities " index="25" code="140700">晋中</span>
+                                        <span class="cities " index="26" code="210700">锦州</span>
+                                        <span class="cities " index="27" code="220200">吉林</span>
+                                        <span class="cities " index="28" code="230300">鸡西</span>
+                                        <span class="cities last " index="29" code="230800">佳木斯</span>
+                                        <span class="cities head " index="30" code="370100">济南</span>
+                                        <span class="cities last" index="31" code="370800">济宁</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="J_blk_KLMNP J_blk_tab hide tab">
+                                <div class="wrapper">
+                                    <span class="letter-title">K</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="410200">开封</span>
+                                        <span class="cities " index="1" code="530100">昆明</span>
+                                        <span class="cities last" index="2" code="650200">克拉玛依</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">L</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="131000">廊坊</span>
+                                        <span class="cities " index="1" code="141000">临汾</span>
+                                        <span class="cities " index="2" code="141100">吕梁</span>
+                                        <span class="cities " index="3" code="211000">辽阳</span>
+                                        <span class="cities " index="4" code="220400">辽源</span>
+                                        <span class="cities last " index="5" code="320700">连云港</span>
+                                        <span class="cities head " index="6" code="331100">丽水</span>
+                                        <span class="cities " index="7" code="341500">六安</span>
+                                        <span class="cities " index="8" code="350800">龙岩</span>
+                                        <span class="cities " index="9" code="371200">莱芜</span>
+                                        <span class="cities " index="10" code="371300">临沂</span>
+                                        <span class="cities last " index="11" code="371500">聊城</span>
+                                        <span class="cities head " index="12" code="410300">洛阳</span>
+                                        <span class="cities " index="13" code="411100">漯河</span>
+                                        <span class="cities " index="14" code="431300">娄底</span>
+                                        <span class="cities " index="15" code="450200">柳州</span>
+                                        <span class="cities " index="16" code="451300">来宾</span>
+                                        <span class="cities last " index="17" code="469028">临高</span>
+                                        <span class="cities head " index="18" code="469033">乐东</span>
+                                        <span class="cities " index="19" code="469034">陵水</span>
+                                        <span class="cities " index="20" code="510500">泸州</span>
+                                        <span class="cities " index="21" code="511100">乐山</span>
+                                        <span class="cities " index="22" code="513400">凉山</span>
+                                        <span class="cities last " index="23" code="520200">六盘水</span>
+                                        <span class="cities head " index="24" code="530700">丽江</span>
+                                        <span class="cities " index="25" code="530900">临沧</span>
+                                        <span class="cities " index="26" code="540100">拉萨</span>
+                                        <span class="cities " index="27" code="620100">兰州</span>
+                                        <span class="cities " index="28" code="621200">陇南</span>
+                                        <span class="cities last " index="29" code="622900">临夏</span>
+                                        <span class="cities head " index="30" code="450200">柳州</span>
+                                        <span class="cities " index="31" code="451300">来宾</span>
+                                        <span class="cities " index="32" code="469028">临高</span>
+                                        <span class="cities " index="33" code="469033">乐东</span>
+                                        <span class="cities " index="34" code="469034">陵水</span>
+                                        <span class="cities last " index="35" code="131000">廊坊</span>
+                                        <span class="cities head " index="36" code="141000">临汾</span>
+                                        <span class="cities " index="37" code="141100">吕梁</span>
+                                        <span class="cities " index="38" code="211000">辽阳</span>
+                                        <span class="cities " index="39" code="220400">辽源</span>
+                                        <span class="cities " index="40" code="371200">莱芜</span>
+                                        <span class="cities last " index="41" code="371300">临沂</span>
+                                        <span class="cities head last" index="42" code="371500">聊城</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">M</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="231000">牡丹江</span>
+                                        <span class="cities " index="1" code="340500">马鞍山</span>
+                                        <span class="cities " index="2" code="440900">茂名</span>
+                                        <span class="cities " index="3" code="441400">梅州</span>
+                                        <span class="cities " index="4" code="510700">绵阳</span>
+                                        <span class="cities last " index="5" code="511400">眉山</span>
+                                        <span class="cities head " index="6" code="440900">茂名</span>
+                                        <span class="cities " index="7" code="441400">梅州</span>
+                                        <span class="cities last" index="8" code="231000">牡丹江</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">N</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="320100">南京</span>
+                                        <span class="cities " index="1" code="320600">南通</span>
+                                        <span class="cities " index="2" code="330200">宁波</span>
+                                        <span class="cities " index="3" code="350700">南平</span>
+                                        <span class="cities " index="4" code="350900">宁德</span>
+                                        <span class="cities last " index="5" code="360100">南昌</span>
+                                        <span class="cities head " index="6" code="411300">南阳</span>
+                                        <span class="cities " index="7" code="450100">南宁</span>
+                                        <span class="cities " index="8" code="511000">内江</span>
+                                        <span class="cities " index="9" code="511300">南充</span>
+                                        <span class="cities " index="10" code="533300">怒江</span>
+                                        <span class="cities last last" index="11" code="450100">南宁</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">P</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="211100">盘锦</span>
+                                        <span class="cities " index="1" code="350300">莆田</span>
+                                        <span class="cities " index="2" code="360300">萍乡</span>
+                                        <span class="cities " index="3" code="410400">平顶山</span>
+                                        <span class="cities " index="4" code="410900">濮阳</span>
+                                        <span class="cities last " index="5" code="510400">攀枝花</span>
+                                        <span class="cities head " index="6" code="530800">普洱</span>
+                                        <span class="cities " index="7" code="620800">平凉</span>
+                                        <span class="cities last" index="8" code="211100">盘锦</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="J_blk_QRSTW J_blk_tab hide tab">
+                                <div class="wrapper">
+                                    <span class="letter-title">Q</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130300">秦皇岛</span>
+                                        <span class="cities " index="1" code="230200">齐齐哈尔</span>
+                                        <span class="cities " index="2" code="230900">七台河</span>
+                                        <span class="cities " index="3" code="330800">衢州</span>
+                                        <span class="cities " index="4" code="350500">泉州</span>
+                                        <span class="cities last " index="5" code="370200">青岛</span>
+                                        <span class="cities head " index="6" code="429005">潜江</span>
+                                        <span class="cities " index="7" code="441800">清远</span>
+                                        <span class="cities " index="8" code="450700">钦州</span>
+                                        <span class="cities " index="9" code="469002">琼海</span>
+                                        <span class="cities " index="10" code="469036">琼中</span>
+                                        <span class="cities last " index="11" code="522300">黔西南</span>
+                                        <span class="cities head " index="12" code="522600">黔东南</span>
+                                        <span class="cities " index="13" code="522700">黔南</span>
+                                        <span class="cities " index="14" code="530300">曲靖</span>
+                                        <span class="cities " index="15" code="621000">庆阳</span>
+                                        <span class="cities " index="16" code="441800">清远</span>
+                                        <span class="cities last " index="17" code="450700">钦州</span>
+                                        <span class="cities head " index="18" code="469002">琼海</span>
+                                        <span class="cities " index="19" code="469036">琼中</span>
+                                        <span class="cities " index="20" code="130300">秦皇岛</span>
+                                        <span class="cities " index="21" code="230200">齐齐哈尔</span>
+                                        <span class="cities " index="22" code="230900">七台河</span>
+                                        <span class="cities last last" index="23" code="370200">青岛</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">R</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="371100">日照</span>
+                                        <span class="cities last" index="1" code="371100">日照</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">S</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130100">石家庄</span>
+                                        <span class="cities " index="1" code="140600">朔州</span>
+                                        <span class="cities " index="2" code="210100">沈阳</span>
+                                        <span class="cities " index="3" code="220300">四平</span>
+                                        <span class="cities " index="4" code="220700">松原</span>
+                                        <span class="cities last " index="5" code="230500">双鸭山</span>
+                                        <span class="cities head " index="6" code="231200">绥化</span>
+                                        <span class="cities " index="7" code="310100">上海</span>
+                                        <span class="cities " index="8" code="320500">苏州</span>
+                                        <span class="cities " index="9" code="321300">宿迁</span>
+                                        <span class="cities " index="10" code="330600">绍兴</span>
+                                        <span class="cities last " index="11" code="341300">宿州</span>
+                                        <span class="cities head " index="12" code="350400">三明</span>
+                                        <span class="cities " index="13" code="361100">上饶</span>
+                                        <span class="cities " index="14" code="411200">三门峡</span>
+                                        <span class="cities " index="15" code="411400">商丘</span>
+                                        <span class="cities " index="16" code="420300">十堰</span>
+                                        <span class="cities last " index="17" code="421300">随州</span>
+                                        <span class="cities head " index="18" code="429021">神农架</span>
+                                        <span class="cities " index="19" code="430500">邵阳</span>
+                                        <span class="cities " index="20" code="440200">韶关</span>
+                                        <span class="cities " index="21" code="440300">深圳</span>
+                                        <span class="cities " index="22" code="440500">汕头</span>
+                                        <span class="cities last " index="23" code="441500">汕尾</span>
+                                        <span class="cities head " index="24" code="460200">三亚</span>
+                                        <span class="cities " index="25" code="510900">遂宁</span>
+                                        <span class="cities " index="26" code="611000">商洛</span>
+                                        <span class="cities " index="27" code="640200">石嘴山</span>
+                                        <span class="cities " index="28" code="659001">石河子</span>
+                                        <span class="cities last " index="29" code="440200">韶关</span>
+                                        <span class="cities head " index="30" code="440300">深圳</span>
+                                        <span class="cities " index="31" code="440500">汕头</span>
+                                        <span class="cities " index="32" code="441500">汕尾</span>
+                                        <span class="cities " index="33" code="460200">三亚</span>
+                                        <span class="cities " index="34" code="130100">石家庄</span>
+                                        <span class="cities last " index="35" code="140600">朔州</span>
+                                        <span class="cities head " index="36" code="210100">沈阳</span>
+                                        <span class="cities " index="37" code="220300">四平</span>
+                                        <span class="cities " index="38" code="220700">松原</span>
+                                        <span class="cities " index="39" code="230500">双鸭山</span>
+                                        <span class="cities last" index="40" code="231200">绥化</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">T</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="120100">天津</span>
+                                        <span class="cities " index="1" code="130200">唐山</span>
+                                        <span class="cities " index="2" code="140100">太原</span>
+                                        <span class="cities " index="3" code="150500">通辽</span>
+                                        <span class="cities " index="4" code="211200">铁岭</span>
+                                        <span class="cities last " index="5" code="220500">通化</span>
+                                        <span class="cities head " index="6" code="321200">泰州</span>
+                                        <span class="cities " index="7" code="331000">台州</span>
+                                        <span class="cities " index="8" code="340700">铜陵</span>
+                                        <span class="cities " index="9" code="370900">泰安</span>
+                                        <span class="cities " index="10" code="429006">天门</span>
+                                        <span class="cities last " index="11" code="469026">屯昌</span>
+                                        <span class="cities head " index="12" code="522200">铜仁</span>
+                                        <span class="cities " index="13" code="610200">铜川</span>
+                                        <span class="cities " index="14" code="620500">天水</span>
+                                        <span class="cities " index="15" code="652100">吐鲁番</span>
+                                        <span class="cities " index="16" code="654200">塔城</span>
+                                        <span class="cities last " index="17" code="659003">图木舒克</span>
+                                        <span class="cities head " index="18" code="469026">屯昌</span>
+                                        <span class="cities " index="19" code="120100">天津</span>
+                                        <span class="cities " index="20" code="130200">唐山</span>
+                                        <span class="cities " index="21" code="140100">太原</span>
+                                        <span class="cities " index="22" code="150500">通辽</span>
+                                        <span class="cities last " index="23" code="211200">铁岭</span>
+                                        <span class="cities head " index="24" code="220500">通化</span>
+                                        <span class="cities last" index="25" code="370900">泰安</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">W</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="150300">乌海</span>
+                                        <span class="cities " index="1" code="150900">乌兰察布</span>
+                                        <span class="cities " index="2" code="320200">无锡</span>
+                                        <span class="cities " index="3" code="330300">温州</span>
+                                        <span class="cities " index="4" code="340200">芜湖</span>
+                                        <span class="cities last " index="5" code="370700">潍坊</span>
+                                        <span class="cities head " index="6" code="371000">威海</span>
+                                        <span class="cities " index="7" code="420100">武汉</span>
+                                        <span class="cities " index="8" code="450400">梧州</span>
+                                        <span class="cities " index="9" code="469001">五指山</span>
+                                        <span class="cities " index="10" code="469005">文昌</span>
+                                        <span class="cities last " index="11" code="469006">万宁</span>
+                                        <span class="cities head " index="12" code="532600">文山</span>
+                                        <span class="cities " index="13" code="610500">渭南</span>
+                                        <span class="cities " index="14" code="620600">武威</span>
+                                        <span class="cities " index="15" code="640300">吴忠</span>
+                                        <span class="cities " index="16" code="650100">乌鲁木齐</span>
+                                        <span class="cities last " index="17" code="659004">五家渠</span>
+                                        <span class="cities head " index="18" code="450400">梧州</span>
+                                        <span class="cities " index="19" code="469001">五指山</span>
+                                        <span class="cities " index="20" code="469005">文昌</span>
+                                        <span class="cities " index="21" code="469006">万宁</span>
+                                        <span class="cities " index="22" code="150300">乌海</span>
+                                        <span class="cities last " index="23" code="150900">乌兰察布</span>
+                                        <span class="cities head " index="24" code="370700">潍坊</span>
+                                        <span class="cities last" index="25" code="371000">威海</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="J_blk_XYZ J_blk_tab hide tab">
+                                <div class="wrapper">
+                                    <span class="letter-title">X</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130500">邢台</span>
+                                        <span class="cities " index="1" code="140900">忻州</span>
+                                        <span class="cities " index="2" code="152200">兴安</span>
+                                        <span class="cities " index="3" code="152500">锡林郭勒</span>
+                                        <span class="cities " index="4" code="320300">徐州</span>
+                                        <span class="cities last " index="5" code="341800">宣城</span>
+                                        <span class="cities head " index="6" code="350200">厦门</span>
+                                        <span class="cities " index="7" code="360500">新余</span>
+                                        <span class="cities " index="8" code="410700">新乡</span>
+                                        <span class="cities " index="9" code="411000">许昌</span>
+                                        <span class="cities " index="10" code="411500">信阳</span>
+                                        <span class="cities last " index="11" code="420600">襄阳</span>
+                                        <span class="cities head " index="12" code="420900">孝感</span>
+                                        <span class="cities " index="13" code="421200">咸宁</span>
+                                        <span class="cities " index="14" code="429004">仙桃</span>
+                                        <span class="cities " index="15" code="430300">湘潭</span>
+                                        <span class="cities " index="16" code="433100">湘西</span>
+                                        <span class="cities last " index="17" code="532800">西双版纳</span>
+                                        <span class="cities head " index="18" code="610100">西安</span>
+                                        <span class="cities " index="19" code="610400">咸阳</span>
+                                        <span class="cities " index="20" code="630100">西宁</span>
+                                        <span class="cities " index="21" code="130500">邢台</span>
+                                        <span class="cities " index="22" code="140900">忻州</span>
+                                        <span class="cities last " index="23" code="152200">兴安</span>
+                                        <span class="cities head last" index="24" code="152500">锡林郭勒</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">Y</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="140300">阳泉</span>
+                                        <span class="cities " index="1" code="140800">运城</span>
+                                        <span class="cities " index="2" code="210800">营口</span>
+                                        <span class="cities " index="3" code="222400">延边朝鲜族</span>
+                                        <span class="cities " index="4" code="230700">伊春</span>
+                                        <span class="cities last " index="5" code="320900">盐城</span>
+                                        <span class="cities head " index="6" code="321000">扬州</span>
+                                        <span class="cities " index="7" code="360600">鹰潭</span>
+                                        <span class="cities " index="8" code="360900">宜春</span>
+                                        <span class="cities " index="9" code="370600">烟台</span>
+                                        <span class="cities " index="10" code="420500">宜昌</span>
+                                        <span class="cities last " index="11" code="430600">岳阳</span>
+                                        <span class="cities head " index="12" code="430900">益阳</span>
+                                        <span class="cities " index="13" code="431100">永州</span>
+                                        <span class="cities " index="14" code="441700">阳江</span>
+                                        <span class="cities " index="15" code="445300">云浮</span>
+                                        <span class="cities " index="16" code="450900">玉林</span>
+                                        <span class="cities last " index="17" code="511500">宜宾</span>
+                                        <span class="cities head " index="18" code="511800">雅安</span>
+                                        <span class="cities " index="19" code="530400">玉溪</span>
+                                        <span class="cities " index="20" code="610600">延安</span>
+                                        <span class="cities " index="21" code="610800">榆林</span>
+                                        <span class="cities " index="22" code="640100">银川</span>
+                                        <span class="cities last " index="23" code="654000">伊犁</span>
+                                        <span class="cities head " index="24" code="441700">阳江</span>
+                                        <span class="cities " index="25" code="445300">云浮</span>
+                                        <span class="cities " index="26" code="450900">玉林</span>
+                                        <span class="cities " index="27" code="140300">阳泉</span>
+                                        <span class="cities " index="28" code="140800">运城</span>
+                                        <span class="cities last " index="29" code="210800">营口</span>
+                                        <span class="cities head " index="30" code="222400">延边朝鲜族</span>
+                                        <span class="cities " index="31" code="230700">伊春</span>
+                                        <span class="cities last" index="32" code="370600">烟台</span>
+                                    </p>
+                                </div>
+                                <div class="wrapper">
+                                    <span class="letter-title">Z</span>
+                                    <p class="all-cities">
+                                        <span class="cities head " index="0" code="130700">张家口</span>
+                                        <span class="cities " index="1" code="321100">镇江</span>
+                                        <span class="cities " index="2" code="330900">舟山</span>
+                                        <span class="cities " index="3" code="350600">漳州</span>
+                                        <span class="cities " index="4" code="370300">淄博</span>
+                                        <span class="cities last " index="5" code="370400">枣庄</span>
+                                        <span class="cities head " index="6" code="410100">郑州</span>
+                                        <span class="cities " index="7" code="411600">周口</span>
+                                        <span class="cities " index="8" code="411700">驻马店</span>
+                                        <span class="cities " index="9" code="430200">株洲</span>
+                                        <span class="cities " index="10" code="430800">张家界</span>
+                                        <span class="cities last " index="11" code="440400">珠海</span>
+                                        <span class="cities head " index="12" code="440800">湛江</span>
+                                        <span class="cities " index="13" code="441200">肇庆</span>
+                                        <span class="cities " index="14" code="442000">中山</span>
+                                        <span class="cities " index="15" code="510300">自贡</span>
+                                        <span class="cities " index="16" code="512000">资阳</span>
+                                        <span class="cities last " index="17" code="520300">遵义</span>
+                                        <span class="cities head " index="18" code="530600">昭通</span>
+                                        <span class="cities " index="19" code="620700">张掖</span>
+                                        <span class="cities " index="20" code="640500">中卫</span>
+                                        <span class="cities " index="21" code="440400">珠海</span>
+                                        <span class="cities " index="22" code="440800">湛江</span>
+                                        <span class="cities last " index="23" code="441200">肇庆</span>
+                                        <span class="cities head " index="24" code="442000">中山</span>
+                                        <span class="cities " index="25" code="130700">张家口</span>
+                                        <span class="cities " index="26" code="370300">淄博</span>
+                                        <span class="cities last" index="27" code="370400">枣庄</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="NavBox">
+    <div class="comWidth">
+        <div id="shopClass" class="shopClass fl">
+            <h3>
+                全部商品分类 <i></i>
+            </h3>
+            <div id="shopClass_show" class="shopClass_show" >
+                <dl class="shopClass_item">
+                    <dt>
+                        <a href="#" class="b">食品</a>
+                    </dt>
+                    <dd>
+                        <a href="#">牛奶</a>
+                        <a href="#">饼干</a>
+                        <a href="#">粮油</a>
+                    </dd>
+                    <div class="shopClass_list ">
+                        <div class="shopClass_cont">
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">肉类/豆干</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">牛肉</a>
+                                    <a href="#">
+                                        <span class="sp1">猪肉</span>
+                                    </a>
+                                    <a href="#">鸡鸭禽肉</a>
+                                    <a href="#">
+                                        <span id="sp2">豆干</span>
+                                    </a>
+                                    <a href="#">肉松</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">饼干糕点</a>
+                                </dt>
+                                <dd class="dd1">
+                                    <a href="#">饼干</a>
+                                    <a href="#">曲奇</a>
+                                    <a href="#">糕点</a>
+                                    <a href="#">蛋卷</a>
+                                    <a href="#">面包</a>
+                                    <a href="#">薯片</a>
+                                    <a href="#">肉松饼</a>
+                                    <a href="#">麻花</a>
+                                    <a href="#">蛋黄派</a>
+                                    <a href="#">沙琪玛</a>
+                                    <a href="#">凤梨酥</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">酒类</a>
+                                </dt>
+                                <dd class="dd2">
+                                    <a href="#">葡萄酒</a>
+                                    <a href="#">黄酒</a>
+                                    <a href="#">啤酒</a>
+                                    <a href="#">白酒</a>
+                                    <a href="#">洋酒</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">饮料</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">水</a>
+                                    <a href="#">茶饮料</a>
+                                    <a href="#">碳酸饮料</a>
+                                    <a href="#">功能饮料</a>
+                                    <a href="#">果蔬饮料</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">牛奶制品</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">常温奶</a>
+                                    <a href="#">乳饮料</a>
+                                    <a href="#">儿童奶</a>
+                                    <a href="#">酸奶</a>
+                                    <a href="#">豆奶</a>
+                                    <a href="#">低脂奶</a>
+                                    <a href="#">成人奶</a>
+                                    <a href="#">全脂奶</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">坚果炒货</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">核桃</a>
+                                    <a href="#">夏威夷果</a>
+                                    <a href="#">碧根果</a>
+                                    <a href="#">开心果</a>
+                                    <a href="#">腰果</a>
+                                    <a href="#">瓜子</a>
+                                    <a href="#">花生</a>
+                                    <a href="#">杏仁</a>
+                                </dd>
+                            </dl>
+                            <div class="shopList_links">
+                                <a href="#">
+                                    团购活动
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promo-brands">
+                                <h4>品牌</h4>
+                                <p>
+                                    <a href="#" title="卡夫">卡夫</a>
+                                    <a href="#" title="洋河">洋河</a>
+                                    <a href="#" title="德芙">德芙</a>
+                                    <a href="#" title="百草味">百草味</a>
+                                    <a href="#" title="雀巢">雀巢</a>
+                                    <a href="#" title="光明">光明</a>
+                                </p>
+                            </div>
+                            <div class="promo-acts">
+                                <h4>品牌活动</h4>
+                                <p>
+                                    <a href="#" title="新农哥">新农哥</a>
+                                    <a href="#" title="南方大促">南方大促</a>
+                                </p>
+                            </div>
+                            <a href="#" class="promo-bannner">
+                                <img src="images/foodimage/promo-banner/banner1.jpg"></a>
+                        </div>
+                    </div>
+                </dl>
+                <dl class="shopClass_item">
+                    <dt>
+                        <a href="#" class="b">美容</a>
+                    </dt>
+                    <dd>
+                        <a href="#">洗发</a>
+                        <a href="#">牙膏</a>
+                        <a href="#">洁面</a>
+                    </dd>
+                    <div class="shopClass_list ">
+                        <div class="shopClass_cont">
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">个人洗护</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">洗发水</a>
+                                    <a href="#">
+                                        <span class="sp1">护发素</span>
+                                    </a>
+                                    <a href="#">沐浴露</a>
+                                    <a href="#">
+                                        <span id="sp2">香皂</span>
+                                    </a>
+                                    <a href="#">洗手液</a>
+                                    <a href="#">避孕套</a>
+                                    <a href="#">浴盐</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">美容护肤</a>
+                                </dt>
+                                <dd class="dd1">
+                                    <a href="#">洗面奶</a>
+                                    <a href="#">爽肤水</a>
+                                    <a href="#">乳液</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">隔离霜</a>
+                                    <a href="#">护手霜</a>
+                                    <a href="#">防晒</a>
+                                    <a href="#">面部护理</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">口腔护理</a>
+                                </dt>
+                                <dd class="dd2">
+                                    <a href="#">牙膏</a>
+                                    <a href="#">牙刷</a>
+                                    <a href="#">漱口水</a>
+                                    <a href="#">牙线</a>
+                                    <a href="#">假牙清理</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">男士护理</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">男士控油</a>
+                                    <a href="#">男士洁面</a>
+                                    <a href="#">男士乳液</a>
+                                    <a href="#">男士爽肤水</a>
+                                    <a href="#">男士私处洗液</a>
+                                    <a href="#">剃须刀</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">女士护理</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">卫生巾</a>
+                                    <a href="#">护垫</a>
+                                    <a href="#">卫生棉条</a>
+                                    <a href="#">成人纸尿裤</a>
+                                    <a href="#">私处洗液</a>
+                                    <a href="#">卫生湿巾</a>
+                                    <a href="#">女性护理</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">品牌</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">海飞丝</a>
+                                    <a href="#">多芬</a>
+                                    <a href="#">云南白药</a>
+                                    <a href="#">黑人</a>
+                                    <a href="#">百雀羚</a>
+                                    <a href="#">玉兰油</a>
+                                </dd>
+                            </dl>
+                            <div class="shopList_links">
+                                <a href="#">
+                                    优惠团购
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promo-brands">
+                                <h4>品牌</h4>
+                                <p>
+                                    <a href="#" title="海飞丝">海飞丝</a>
+                                    <a href="#" title="多芬">多芬</a>
+                                    <a href="#" title="云南白药">云南白药</a>
+                                    <a href="#" title="黑人">黑人</a>
+                                    <a href="#" title="百雀羚">百雀羚</a>
+                                    <a href="#" title="玉兰油">玉兰油</a>
+                                </p>
+                            </div>
+                            <div class="promo-acts">
+                                <h4>品牌活动</h4>
+                                <p>
+                                    <a href="#" title=""></a>
+                                    <a href="#" title=""></a>
+                                </p>
+                            </div>
+                            <a href="#" class="promo-bannner">
+                                <img src="images/foodimage/promo-banner/banner2.jpg"></a>
+                        </div>
+                    </div>
+                </dl>
+                <dl class="shopClass_item">
+                    <dt>
+                        <a href="#" class="b">家具家电</a>
+                    </dt>
+                    <dd>
+                        <a href="#">家电</a>
+                        <a href="#">锅</a>
+                        <a href="#">箱包</a>
+                    </dd>
+                    <div class="shopClass_list ">
+                        <div class="shopClass_cont">
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">衣物晾晒</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">衣架/裤架</a>
+                                    <a href="#">
+                                        <span class="sp1">夹子/绳</span>
+                                    </a>
+                                    <a href="#">护洗袋</a>
+                                    <a href="#">
+                                        <span id="sp2">晾晒架</span>
+                                    </a>
+                                    <a href="#">衣物除尘</a>
+                                    <a href="#">烫衣板</a>
+                                    <a href="#">衣叉</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">厨具</a>
+                                </dt>
+                                <dd class="dd1">
+                                    <a href="#">剪刀</a>
+                                    <a href="#">菜刀</a>
+                                    <a href="#">蔬果刀</a>
+                                    <a href="#">套刀</a>
+                                    <a href="#">炒锅</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">整理收纳/箱包</a>
+                                </dt>
+                                <dd class="dd2">
+                                    <a href="#">挂钩/粘钩</a>
+                                    <a href="#">压缩袋</a>
+                                    <a href="#">收纳袋</a>
+                                    <a href="#">收纳盒</a>
+                                    <a href="#">整理架</a>
+                                    <a href="#">防尘罩</a>
+                                    <a href="#">收纳箱</a>
+                                    <a href="#">纸巾盒</a>
+                                    <a href="#">钱包</a>
+                                    <a href="#">双肩包</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">床上用品</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">床品套件/四件套</a>
+                                    <a href="#">枕头/枕芯</a>
+                                    <a href="#">床垫/靠垫/抱枕</a>
+                                    <a href="#">枕套/枕巾</a>
+                                    <a href="#">草席/凉席</a>
+                                    <a href="#">春秋被</a>
+                                    <a href="#">蚊帐/床幔</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">餐具/水具</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">保温杯</a>
+                                    <a href="#">玻璃杯</a>
+                                    <a href="#">茶壶</a>
+                                    <a href="#">陶瓷杯</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">卫浴用品</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">皂盒</a>
+                                    <a href="#">马桶座圈</a>
+                                    <a href="#">地垫</a>
+                                    <a href="#">马桶刷</a>
+                                    <a href="#">浴球/浴花</a>
+                                    <a href="#">干发帽/束发带</a>
+                                    <a href="#">浴帽</a>
+                                    <a href="#">棉签/棉棒</a>
+                                    <a href="#">指甲钳/修甲刀</a>
+                                </dd>
+                            </dl>
+                            <div class="shopList_links">
+                                <a href="#">
+                                    优惠团购
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promo-brands">
+                                <h4>品牌</h4>
+                                <p>
+                                    <a href="#" title="乐宜美">乐宜美</a>
+                                    <a href="#" title="美的">美的</a>
+                                    <a href="#" title="洁丽雅">洁丽雅</a>
+                                    <a href="#" title="振兴">振兴</a>
+                                    <a href="#" title="爱仕达">爱仕达</a>
+                                    <a href="#" title="张小泉">张小泉</a>
+                                </p>
+                            </div>
+                            <div class="promo-acts">
+                                <h4>品牌活动</h4>
+                                <p>
+                                    <a href="#" title="家纺秋冬上新">家纺秋冬上新</a>
+                                    <a href="#" title="家电开春大促">家电开春大促</a>
+                                </p>
+                            </div>
+                            <a href="#" class="promo-bannner">
+                                <img src="images/foodimage/promo-banner/banner3.jpg"></a>
+                        </div>
+                    </div>
+                </dl>
+                <dl class="shopClass_item">
+                    <dt>
+                        <a href="#" class="b">手机、数码</a>
+                    </dt>
+                    <dd>
+                        <a href="#">手机</a>
+                        <a href="#">单反</a>
+                        <a href="#">智能设备</a>
+                    </dd>
+                    <div class="shopClass_list ">
+                        <div class="shopClass_cont">
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">手机通讯</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">手机</a>
+                                    <a href="#">
+                                        <span class="sp1">对讲机</span>
+                                    </a>
+                                    <a href="#">手机维修</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">手机配件</a>
+                                </dt>
+                                <dd class="dd1">
+                                    <a href="#">手机电池</a>
+                                    <a href="#">移动电源</a>
+                                    <a href="#">蓝牙耳机</a>
+                                    <a href="#">充电器</a>
+                                    <a href="#">数据线</a>
+                                    <a href="#">手机耳机</a>
+                                    <a href="#">手机支架</a>
+                                    <a href="#">贴膜</a>
+                                    <a href="#">车载配件</a>
+                                    <a href="#">手机饰品</a>
+                                    <a href="#">拍照配件</a>
+                                    <a href="#">创意配件</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">摄影摄像</a>
+                                </dt>
+                                <dd class="dd2">
+                                    <a href="#">数码相机</a>
+                                    <a href="#">单电/微单相机</a>
+                                    <a href="#">单反相机</a>
+                                    <a href="#">运动相机</a>
+                                    <a href="#">摄像机</a>
+                                    <a href="#">镜头</a>
+                                    <a href="#">户外器材</a>
+                                    <a href="#">影棚器材</a>
+                                    <a href="#">冲印服务</a>
+                                    <a href="#">数码相框</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">数码配件</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">存储卡</a>
+                                    <a href="#">音箱/音响</a>
+                                    <a href="#">便携/无线音箱</a>
+                                    <a href="#">收音机</a>
+                                    <a href="#">台式机</a>
+                                    <a href="#">麦克风</a>
+                                    <a href="#">MP3/MP4</a>
+                                    <a href="#">专业音频</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">智能设备</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">智能手环</a>
+                                    <a href="#">智能手表</a>
+                                    <a href="#">智能眼镜</a>
+                                    <a href="#">智能机器人</a>
+                                    <a href="#">运动跟踪器</a>
+                                    <a href="#">健康监测</a>
+                                    <a href="#">智能配饰</a>
+                                    <a href="#">智能家居</a>
+                                    <a href="#">无人机</a>
+                                    <a href="#">体感车</a>
+                                </dd>
+                            </dl>
+                            <div class="shopList_links">
+                                <a href="#">
+                                    优惠购物
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promo-brands">
+                                <h4>品牌</h4>
+                                <p>
+                                    <a href="#" title="HUAWEI">HUAWEI</a>
+                                    <a href="#" title="小米">小米</a>
+                                    <a href="#" title="MEIZU">MEIZU</a>
+                                    <a href="#" title="SONY">SONY</a>
+                                    <a href="#" title="Nikon">Nikon</a>
+                                    <a href="#" title="MONSTER">MONSTER</a>
+                                </p>
+                            </div>
+                            <div class="promo-acts">
+                                <h4>品牌活动</h4>
+                                <p>
+                                    <a href="#" title="天天半价秒">天天半价秒</a>
+                                    <a href="#" title=""></a>
+                                </p>
+                            </div>
+                            <a href="#" class="promo-bannner">
+                                <img src="images/foodimage/promo-banner/banner4.jpg"></a>
+                        </div>
+                    </div>
+                </dl>
+                <dl class="shopClass_item">
+                    <dt>
+                        <a href="#" class="b">书籍</a>
+                    </dt>
+                    <dd>
+                        <a href="#">图书</a>
+                        <a href="#">音像</a>
+                        <a href="#">电子书</a>
+                    </dd>
+                    <div class="shopClass_list ">
+                        <div class="shopClass_cont">
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">音像</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">音乐</a>
+                                    <a href="#">
+                                        <span class="sp1">影视</span>
+                                    </a>
+                                    <a href="#">教育音像</a>
+                                    <a href="#">
+                                        <span id="sp2">游戏</span>
+                                    </a>
+                                    <a href="#">影视/动漫周边</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">文艺</a>
+                                </dt>
+                                <dd class="dd1">
+                                    <a href="#">小说</a>
+                                    <a href="#">文学</a>
+                                    <a href="#">青春文学</a>
+                                    <a href="#">传记</a>
+                                    <a href="#">动漫</a>
+                                    <a href="#">艺术</a>
+                                    <a href="#">摄影</a>
+                                    <a href="#">书法</a>
+                                    <a href="#">音乐</a>
+                                    <a href="#">绘画</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">人文社科</a>
+                                </dt>
+                                <dd class="dd2">
+                                    <a href="#">历史</a>
+                                    <a href="#">心理学</a>
+                                    <a href="#">政治/军事</a>
+                                    <a href="#">国学/古籍</a>
+                                    <a href="#">哲学/宗教</a>
+                                    <a href="#">社会科学</a>
+                                    <a href="#">法律</a>
+                                    <a href="#">文化</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">科技</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">计算机与互联网</a>
+                                    <a href="#">科普</a>
+                                    <a href="#">建筑</a>
+                                    <a href="#">工业技术</a>
+                                    <a href="#">电子/通信</a>
+                                    <a href="#">医学</a>
+                                    <a href="#">科学与自然</a>
+                                    <a href="#">农林</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">电子书</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">小说</a>
+                                    <a href="#">励志与成功</a>
+                                    <a href="#">经济金融</a>
+                                    <a href="#">平板电脑</a>
+                                    <a href="#">文学</a>
+                                    <a href="#">社科</a>
+                                    <a href="#">外文原版</a>
+                                </dd>
+                            </dl>
+                            <dl class="shopList_item">
+                                <dt>
+                                    <a href="#">通俗流行</a>
+                                </dt>
+                                <dd>
+                                    <a href="#">古典音乐</a>
+                                    <a href="#">摇滚说唱</a>
+                                    <a href="#">爵士蓝调</a>
+                                    <a href="#">乡村民谣</a>
+                                    <a href="#">有声读物</a>
+                                </dd>
+                            </dl>
+                            <div class="shopList_links">
+                                <a href="#">
+                                    优惠畅享
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promo">
+                            <div class="promo-brands">
+                                <h4>品牌</h4>
+                                <p>
+                                    <a href="#" title="二十一世纪出版社">二十一世纪出版社</a>
+                                    <a href="#" title="明天出版社">明天出版社</a>
+                                    <a href="#" title="新东方">新东方</a>
+                                    <a href="#" title="博集天卷">博集天卷</a>
+                                    <a href="#" title="机械工业出版社">机械工业出版社</a>
+                                    <a href="#" title="人民邮电出版社">人民邮电出版社</a>
+                                </p>
+                            </div>
+                            <div class="promo-acts">
+                                <h4>品牌活动</h4>
+                                <p>
+                                    <a href="#" title="文教好书满150减50">文教好书满150减50</a>
+                                    <a href="#" title="高教版考研特惠">高教版考研特惠</a>
+                                </p>
+                            </div>
+                            <a href="#" class="promo-bannner">
+                                <img src="images/foodimage/promo-banner/banner5.jpg"></a>
+                        </div>
+                    </div>
+                </dl>
+
+            </div>
+
+        </div>
+        <ul class="nav">
+            <li>
+                <a href="#">食品</a>
+            </li>
+            <li>
+                <a href="#">美容</a>
+            </li>
+            <li>
+                <a href="#">团购</a>
+            </li>
+            <li>
+                <a href="#">发现</a>
+            </li>
+            <li>
+                <a href="#">优惠特卖</a>
+            </li>
+            <li>
+                <a href="#">你有我有</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="searchwrap" class="comWidth clearfix">
+    <div class="crumbs-Bar" id="crumbs-Bar">
+        <div class="crumbs-nav">
+            <div class="crumbs-nav-main clearfix">
+                <div class="crumbs-nav-item">
+                    <div class="crumbs-first">
+                        <a href="#">全部结果</a>
+                    </div>
+                </div> <i class="crumbs-arrow">></i>
+                <div class="crumbs-nav-item"> <strong class="search-key">食品</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sh_container" class="sh_container">
+        <div id="selector" class="selector">
+            <div class="selectorLine s-brand">
+                <div class="s1-wrap extend">
+                    <div class="s1-key"> <strong>品牌：</strong>
+                    </div>
+                    <div class="s1-value ">
+                        <div class="s1-v-list">
+                            <ul class="valueList fixed">
+                                <li>
+                                    <a href="#"> <i></i>
+                                    旺旺
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    乐事
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    卫龙
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    良品铺子
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    口水娃
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    好丽友
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <i></i>
+                                    甘源牌
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="selectorLine s-line">
+            <div class="s1-wrap">
+                <div class="s1-key">
+                    <strong>分类：</strong>
+                </div>
+                <div class="s1-value">
+                    <div class="s1-v-list">
+                        <ul class="valueList fixed">
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                豆类制品
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                蛋糕糕点
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                牛肉类
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                饼干
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                蔬果干类
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                膨化食品
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i></i>
+                                面包
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="selectorSenior" class="selectorLine s-line s--senior">
+            <div class="s1-wrap">
+                <div class="s1-key">
+                    <strong>高级选项：</strong>
+                </div>
+                <div class="s1-value">
+                    <div class="s1-v-tab">
+                        <div class="s1-tab-trigger clearfix">
+                            <a href="#" class="trig-item">
+                                <span class="text">包装单位</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">国产/进口</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">产品产地</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">价格</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">包装</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">口味</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">是否含糖</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                            <a href="#" class="trig-item">
+                                <span class="text">其它分类</span>
+                                <i class="arrow1">&#xe600;</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="s1-tab-cont">
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            袋袋
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            箱装
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            盒装
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            罐装
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            进口
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            国产
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            日本
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            韩国
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            德国
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            港澳台
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            0-29
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            30-59
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            60-89
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            90-199
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            礼盒装
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            独立包装
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            组合装
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            其它
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            原味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            奶油味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            烧烤味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            麻辣味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            香辣味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            椒盐味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            咸味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            混合口味
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            无糖
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            含糖
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s1-tab-cont-item" style="display:none;">
+                            <div class="s1-v-list">
+                                <ul class="valueList clearfix">
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            粮油调味
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            地方特产
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            饮料冲调
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            工业技术
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            管理
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            法律
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            社会科学
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i></i>
+                                            考试
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="main" class="g-main2">
+            <div class="m-list">
+                <div class="m1-wrap">
+                    <div id="filter" class="filter">
+                        <div class="f-line top">
+                            <div class="f-sort">
+                                <a class="curr" href="#">
+                                    综合排序
+                                    <i></i>
+                                </a>
+                                <a class="" href="#">
+                                    销量
+                                    <i></i>
+                                </a>
+                                <a class="" href="#">
+                                    价格
+                                    <i></i>
+                                </a>
+                                <a class="" href="#">
+                                    评论数
+                                    <i></i>
+                                </a>
+                                <a class="" href="#">
+                                    新品
+                                    <i></i>
+                                </a>
+                            </div>
+                            <div class="f-search">
+                                <input type="text" value="在结果中搜索" class="input-txt">
+                                <a data-type="all" data-field="exp_key" class="btn btn-default" href="#">确定</a>
+                            </div>
+                            <div id="topPage" class="f-pager">
+                                <span class="fp-text"> <b>1</b> <em>/</em>
+                                    <i>200</i>
+                                </span>
+                                <a class="fp-prev disabled" href="#">&lt;</a>
+                                <a class="fp-next" href="#">&gt;</a>
+                            </div>
+                            <div class="f-result-sum">
+                                共
+                                <span id="resCount" class="num">64.3万</span>
+                                件商品
+                            </div>
+                            <span class="clr"></span>
+                        </div>
+                    </div>
+                    <div id="goodsList" class="goods-list-v1 gl-type-1 J-goods-list">
+                        <ul class="gl-warp clearfix" data-tpl="1">
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】太阳小米锅巴麻辣味50g" href="#">
+                                            <img width="220" height="220" class="err-product"  src="images/shipinsousuo/ssjg1.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="0"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_859757" data-price="2.10"><em>¥</em>
+                                            <i>2.10</i></strong> 
+                                        <div class="p-icons" id="J_pro_859757">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】太阳小米锅巴麻辣味50g" href="//item.jd.com/859757.html" onclick="searchlog(1,859757,0,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】太阳小米锅巴麻辣味50g</em>
+                                            <i class="promo-words" id="J_AD_859757"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>已有
+                                            <a id="J_comment_859757" target="_blank" href="//item.jd.com/859757.html#comment" onclick="searchlog(1,859757,0,3,'','flagsClk=4194944')">47万+</a>
+                                            人评价</strong> 
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast"  href="#" onclick="">
+                                        <i></i>
+                                           对比 
+                                        </a>
+                                        <a class="p-o-btn focus J_focus"  href="#" onclick="">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" >
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】太阳小米锅巴五香味50g" href="//item.jd.com/859759.html" onclick="searchlog(1,859759,1,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg2.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_859759" data-price="2.10">
+                                            <em>¥</em>
+                                            <i>2.10</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_859759">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】太阳小米锅巴五香味50g" href="//item.jd.com/859759.html" onclick="searchlog(1,859759,1,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】太阳小米锅巴五香味50g</em>
+                                            <i class="promo-words" id="J_AD_859759"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_859759" target="_blank" href="//item.jd.com/859759.html#comment" onclick="searchlog(1,859759,1,3,'','flagsClk=4194944')">47万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="859759" href="#" onclick="searchlog(1,859759,1,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="859759" href="#" onclick="searchlog(1,859759,1,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="859759" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=859759&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,859759,1,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】雀巢 （Nestle）脆脆鲨 巧克力味威化 640g" href="//item.jd.com/508411.html" onclick="searchlog(1,508411,2,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg3.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="0"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_508411" data-price="25.80">
+                                            <em>¥</em>
+                                            <i>25.80</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_508411">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】雀巢 （Nestle）脆脆鲨 巧克力味威化 640g" href="//item.jd.com/508411.html" onclick="searchlog(1,508411,2,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】雀巢 （Nestle）脆脆鲨 巧克力味威化 640g</em>
+                                            <i class="promo-words" id="J_AD_508411"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_508411" target="_blank" href="//item.jd.com/508411.html#comment" onclick="searchlog(1,508411,2,3,'','flagsClk=4194944')">13万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="508411" href="#" onclick="searchlog(1,508411,2,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="508411" href="#" onclick="searchlog(1,508411,2,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="508411" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=508411&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,508411,2,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】旺旺 仙贝 加量装 540g" href="//item.jd.com/1227877.html" onclick="searchlog(1,1227877,3,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg4.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="0"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1227877" data-price="18.50">
+                                            <em>¥</em>
+                                            <i>18.50</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_1227877">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】旺旺 仙贝 加量装 540g" href="//item.jd.com/1227877.html" onclick="searchlog(1,1227877,3,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】旺旺 仙贝 加量装 540g</em>
+                                            <i class="promo-words" id="J_AD_1227877"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_1227877" target="_blank" href="//item.jd.com/1227877.html#comment" onclick="searchlog(1,1227877,3,3,'','flagsClk=4194944')">10万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="1227877" href="#" onclick="searchlog(1,1227877,3,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="1227877" href="#" onclick="searchlog(1,1227877,3,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="1227877" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=1227877&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,1227877,3,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】米老头（Uncle Pop）蛋黄煎饼 牛奶味 300g" href="//item.jd.com/883722.html" onclick="searchlog(1,883722,4,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg5.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="0" data-venid="1000017621"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_883722" data-price="12.80">
+                                            <em>¥</em>
+                                            <i>12.80</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_883722">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】米老头（Uncle Pop）蛋黄煎饼 牛奶味 300g" href="//item.jd.com/883722.html" onclick="searchlog(1,883722,4,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】米老头（Uncle Pop）蛋黄煎饼 牛奶味 300g</em>
+                                            <i class="promo-words" id="J_AD_883722"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_883722" target="_blank" href="//item.jd.com/883722.html#comment" onclick="searchlog(1,883722,4,3,'','flagsClk=4194944')">8万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="883722" href="#" onclick="searchlog(1,883722,4,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="883722" href="#" onclick="searchlog(1,883722,4,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="883722" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=883722&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,883722,4,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】咪咪 正宗马来西亚风味 虾条 20g*40包" href="//item.jd.com/1178938.html" onclick="searchlog(1,1178938,5,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg6.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1178938" data-price="19.90">
+                                            <em>¥</em>
+                                            <i>19.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_1178938">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】咪咪 正宗马来西亚风味 虾条 20g*40包" href="//item.jd.com/1178938.html" onclick="searchlog(1,1178938,5,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】咪咪 正宗马来西亚风味 虾条 20g*40包</em>
+                                            <i class="promo-words" id="J_AD_1178938"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_1178938" target="_blank" href="//item.jd.com/1178938.html#comment" onclick="searchlog(1,1178938,5,3,'','flagsClk=4194944')">5.7万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="1178938" href="#" onclick="searchlog(1,1178938,5,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="1178938" href="#" onclick="searchlog(1,1178938,5,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="1178938" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=1178938&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,1178938,5,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】好巴食豆腐干多种口味混合装1000g" href="//item.jd.com/947485.html" onclick="searchlog(1,947485,6,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg7.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_947485" data-price="49.90">
+                                            <em>¥</em>
+                                            <i>49.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_947485">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】好巴食豆腐干多种口味混合装1000g" href="//item.jd.com/947485.html" onclick="searchlog(1,947485,6,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】好巴食豆腐干多种口味混合装1000g</em>
+                                            <i class="promo-words" id="J_AD_947485"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_947485" target="_blank" href="//item.jd.com/947485.html#comment" onclick="searchlog(1,947485,6,3,'','flagsClk=4194944')">6.7万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="947485" href="#" onclick="searchlog(1,947485,6,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="947485" href="#" onclick="searchlog(1,947485,6,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="947485" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=947485&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,947485,6,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】Orion 好丽友 薯愿 三连罐 312g/组（104g*3 薯片）" href="//item.jd.com/495359.html" onclick="searchlog(1,495359,7,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg8.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="0"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_495359" data-price="18.90">
+                                            <em>¥</em>
+                                            <i>18.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_495359">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】Orion 好丽友 薯愿 三连罐 312g/组（104g*3 薯片）" href="//item.jd.com/495359.html" onclick="searchlog(1,495359,7,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】Orion 好丽友 薯愿 三连罐 312g/组（104g*3 薯片）</em>
+                                            <i class="promo-words" id="J_AD_495359"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_495359" target="_blank" href="//item.jd.com/495359.html#comment" onclick="searchlog(1,495359,7,3,'','flagsClk=4194944')">31万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="495359" href="#" onclick="searchlog(1,495359,7,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="495359" href="#" onclick="searchlog(1,495359,7,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="495359" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=495359&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,495359,7,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】口水娃 口水鱼小鱼干 香辣味 15g*20/盒" href="//item.jd.com/1295573.html" onclick="searchlog(1,1295573,8,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg9.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1" data-venid="1000007563" class="picon" style="background:url(//img30.360buyimg.com/jgsq-productsoa/jfs/t3298/192/531112365/2969/474cd763/57bab161Nf957dede.png) no-repeat 0 0;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//img30.360buyimg.com/jgsq-productsoa/jfs/t3298/192/531112365/2969/474cd763/57bab161Nf957dede.png',sizingMethod='noscale');"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1295573" data-price="19.90">
+                                            <em>¥</em>
+                                            <i>19.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_1295573">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】口水娃 口水鱼小鱼干 香辣味 15g*20/盒" href="//item.jd.com/1295573.html" onclick="searchlog(1,1295573,8,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】口水娃 口水鱼小鱼干 香辣味 15g*20/盒</em>
+                                            <i class="promo-words" id="J_AD_1295573"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_1295573" target="_blank" href="//item.jd.com/1295573.html#comment" onclick="searchlog(1,1295573,8,3,'','flagsClk=4194944')">20万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="1295573" href="#" onclick="searchlog(1,1295573,8,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="1295573" href="#" onclick="searchlog(1,1295573,8,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="1295573" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=1295573&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,1295573,8,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】友臣 肉松饼 208g" href="//item.jd.com/923586.html" onclick="searchlog(1,923586,9,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg10.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_923586" data-price="12.90">
+                                            <em>¥</em>
+                                            <i>12.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_923586">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】友臣 肉松饼 208g" href="//item.jd.com/923586.html" onclick="searchlog(1,923586,9,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】友臣 肉松饼 208g</em>
+                                            <i class="promo-words" id="J_AD_923586"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_923586" target="_blank" href="//item.jd.com/923586.html#comment" onclick="searchlog(1,923586,9,3,'','flagsClk=4194944')">18万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="923586" href="#" onclick="searchlog(1,923586,9,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="923586" href="#" onclick="searchlog(1,923586,9,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="923586" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=923586&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,923586,9,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="gl-item">
+                                <div class="gl-i-wrap">
+                                    <div class="p-img">
+                                        <a target="_blank" title="【米发购物】好巴食 豆腐干 混装实惠包400g" href="//item.jd.com/1152049.html" onclick="searchlog(1,1152049,10,2,'','flagsClk=4194944')">
+                                            <img width="220" height="220" class="err-product" data-img="1" src="images/shipinsousuo/ssjg11.jpg" />
+                                        </a>
+                                        <div data-catid="1590" data-jq="1" data-dq="1"></div>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1152049" data-price="19.90">
+                                            <em>¥</em>
+                                            <i>19.90</i>
+                                        </strong>
+                                        <div class="p-icons" id="J_pro_1152049">
+                                            <i class="goods-icons-s1" title="本商品支持货到付款">货到付款</i>
+                                        </div>
+                                    </div>
+                                    <div class="p-name p-name-type-2">
+                                        <a target="_blank" title="【米发购物】好巴食 豆腐干 混装实惠包400g" href="//item.jd.com/1152049.html" onclick="searchlog(1,1152049,10,1,'','flagsClk=4194944')">
+                                            <em>【米发购物】好巴食 豆腐干 混装实惠包400g</em>
+                                            <i class="promo-words" id="J_AD_1152049"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-commit">
+                                        <strong>
+                                            已有
+                                            <a id="J_comment_1152049" target="_blank" href="//item.jd.com/1152049.html#comment" onclick="searchlog(1,1152049,10,3,'','flagsClk=4194944')">4.4万+</a>
+                                            人评价
+                                        </strong>
+                                    </div>
+                                    <div class="p-operate">
+                                        <a class="p-o-btn contrast J_contrast" data-sku="1152049" href="#" onclick="searchlog(1,1152049,10,6,'','flagsClk=4194944')">
+                                            <i></i>
+                                            对比
+                                        </a>
+                                        <a class="p-o-btn focus J_focus" data-sku="1152049" href="#" onclick="searchlog(1,1152049,10,5,'','flagsClk=4194944')">
+                                            <i></i>
+                                            关注
+                                        </a>
+                                        <a class="p-o-btn addcart" data-stock="1152049" data-stock-val="1" data-disable-notice="0" data-presale="0" href="//gate.jd.com/InitCart.aspx?pid=1152049&pcount=1&ptype=1" target="_blank" onclick="searchlog(1,1152049,10,4,'','flagsClk=4194944')" data-limit="0">
+                                            <i></i>
+                                            加入购物车
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="clr"></span>
+                    </div>
+                    <div id="J_scroll_loading" class="notice-loading-more" data-pos="30" data-log-id="1472804282.77699">
+                        <span>正在加载中，请稍后~~</span>
+                    </div>
+                    <div class="page clearfix">
+                        <div id="J_bottomPage" class="p-wrap"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-aside">
+                <div class="aside-bar">
+                    <div id="J_promGoodsWrap_291" class="ab-goods" style="display:block;">
+                        <div class="mt">
+                            <h3>广告商品</h3>
+                        </div>
+                        <div class="mc">
+                            <ul class="clearfix" data-x="ab">
+                                <li onclick="searchlog(1,1521461652,0,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="#">
+                                            <img width="160" height="160" data-img="1" src="images/shipinsousuo/ggsp1.jpg" class="err-product">
+                                        </a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1521461652" data-adv="1">
+                                            <em>¥</em>
+                                            <i>49.00</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTExNjc1NDE4XzI5MSZ0bz1odHRwOi8vaXRlbS5qZC5jb20vMTUyMTQ2MTY1Mi5odG1s&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDreJydkgUEvrlWHmrjRZd56c9IqUwbmznUHw_3ivLamVJiAp9d-DC9BL3kcETj1S16EeQgiZ11PX8RViRNShVW49yk49dpSALAMeY5TlDnag3yl9Fxd2qSSJnC1TnXlKqpYcO0yl31tJIlZZQ8tczemEUfnoG5BNhO01yvmOEHiic2k3Ls0P6N3JABt3HYex0wcmpTO_XXp2M5YbuEtpwlOESj18U64-swjBsbDlxDzXqwwq_AHFIzS47Q_0EXSTJGJo9YxKJzKvUlT09YXlQ7Unkmu3MhuFJM_AGY7eeDDisaHbpeZ2nVIZu9AvbzBaxDaKElZqN10pCvgox-aIKju&v=404">
+                                            <em>创食人麻辣零食大 <font class="skcolor_ljg">礼包</font>
+                                                小吃地方特产 <font class="skcolor_ljg">食品</font>
+                                                荤素搭配1080g</em> 
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">2541</span>
+                                        人评价
+                                    </div>
+                                </li>
+                                <li onclick="searchlog(1,10495273730,1,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="">
+                                            <img width="160" height="160" data-img="1" src="images/shipinsousuo/ggsp2.jpg" class="err-product">
+                                            <img src="https://im-x.jd.com/dsp/np?log=/8+rEV1WYd1z+J1wKOH2QkbKNDAa32RD1/zf/bXmlDoopo0STYlw1r6bLlfVXlIV1sMJfc8b7m1KVTGJgSoRW9U7lzK+T9Ch57anEC/ZrndJLA69AKEbcdM5urYiQz2ZMwllAQfBrrkXvcsmj5Sy3VlYbOqsKEOvcBVom7JIo0kPRfPSWw1AEibn0SE8fhWjd28hpThASfKwNpMEgjOAYbSeish/D4n5hj+yLPCsNDHz8gUxtYUzpQO88QH0yAUGdHVq0YqPp3E0k10PljN0R94rgIe6ZObkyOBzkPOpHnnhmaykjL+p/yEVXUw9kr1K03FT6owfu050e5AXRf8oDMUf2qvTEP7JaoOE4bfa1lWj7VEWjiyO87lxe/zl2mrmeJTEoFtnZcCcyIe30p3TYg==&v=404" class="J_adv_tuiguang_exposal" style="display:none;"></a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_10495273730" data-adv="1">
+                                            <em>¥</em>
+                                            <i>23.90</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTEwOTkyNzQ4XzI5MSZ0bz1odHRwOi8vaXRlbS5qZC5jb20vMTA0OTUyNzM3MzAuaHRtbA&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDoopo0STYlw1r6bLlfVXlIV1sMJfc8b7m1KVTGJgSoRW9U7lzK-T9Ch57anEC_ZrndJLA69AKEbcdM5urYiQz2ZMwllAQfBrrkXvcsmj5Sy3VlYbOqsKEOvcBVom7JIo0kPRfPSWw1AEibn0SE8fhWjlkBch1sfsLVGNihDXl7Ir_QtW0jyrguam0DfkFXdOCbqo0pLLDrl8enzZM81Zh837tXDgmkFCLttH2q2J-zeyMEi9mDdhtLtEAaec0fRsAL4h-7TRbKmYghY1QNcMHVX2z3IBwCYqIE4-_bAI7usYOusOtWTyhxOBym9Z264SL7QPw-DWdHwGNA1nEA4KGH4vDrdj_f723ybLjk3IgotZgv=404">
+                                            <em>【有友】山椒凤爪268散称称重泡椒凤爪鸡爪休闲零食重庆特产 山椒味</em>
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">1132</span>
+                                        人评价
+                                    </div>
+                                </li>
+                                <li onclick="searchlog(1,1336881,2,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTEwNjQwODg5XzI5MSZ0bz1odHRwOi8vaXRlbS5qZC5jb20vMTMzNjg4MS5odG1s&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDpQBEc_qxNcyNAZGFTRrrYEV5UbnzeSrUgbllLwwrttcXzzlmWg6rshaqJRO0Oe1mwzKIXGq-QtjkcV_TFscfvWyYSImtIY34yC53_m76Wu6CEaFKejSsIBZSnEvEV56K_wkbUHXya4sYakPNiKTcoxVZoYjAST5TEKlKjRsN5HddC7FjU2HIkwRt6XOD5J2QDtGDgxHPhxKsllxNQKb_ukYSXdEF7P3IGdGBWWaPFSxCvdCOH6zUTjtJJEhKCRCQViBiVn4PTzpv1oVdp2U69cD2kV70UJYxB2TQTIG8xUqLbwSMk-4s3PL1rWJ6pl1PFkW8NsKDWX9Irlog16-H9d&v=404">
+                                            <img width="160" height="160" data-img="1" src="images/shipinsousuo/ggsp3.jpg" class="err-product">
+                                            <img src="https://im-x.jd.com/dsp/np?log=/8+rEV1WYd1z+J1wKOH2QkbKNDAa32RD1/zf/bXmlDpQBEc/qxNcyNAZGFTRrrYEV5UbnzeSrUgbllLwwrttcXzzlmWg6rshaqJRO0Oe1mwzKIXGq+QtjkcV/TFscfvWyYSImtIY34yC53/m76Wu6CEaFKejSsIBZSnEvEV56K/wkbUHXya4sYakPNiKTcoxERFGg+32/UXBO4aPphmxnaK+AehN6NPXyuDc3QR88nmVYbPEQOd+E6AavO3VutVkiFVTgA8Y6pqKC8dqiyBsDOA8fziwR9cUnFnfet3ScyYXl+3HrFe8fBOFtjaRUfMO4ROPifzLKKG5MUdHGT9ATxwz8IOecTIu/iXwLTj0cf87AHo6Q57LZsGqhP0WYbZaVB872d7V2bA/buQcKziyKw==&v=404" class="J_adv_tuiguang_exposal" style="display:none;"></a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1336881" data-adv="1">
+                                            <em>¥</em>
+                                            <i>37.90</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTEwNjQwODg5XzI5MSZ0bz1odHRwOi8vaXRlbS5qZC5jb20vMTMzNjg4MS5odG1s&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDpQBEc_qxNcyNAZGFTRrrYEV5UbnzeSrUgbllLwwrttcXzzlmWg6rshaqJRO0Oe1mwzKIXGq-QtjkcV_TFscfvWyYSImtIY34yC53_m76Wu6CEaFKejSsIBZSnEvEV56K_wkbUHXya4sYakPNiKTcoxVZoYjAST5TEKlKjRsN5HddC7FjU2HIkwRt6XOD5J2QDtGDgxHPhxKsllxNQKb_ukYSXdEF7P3IGdGBWWaPFSxCvdCOH6zUTjtJJEhKCRCQViBiVn4PTzpv1oVdp2U69cD2kV70UJYxB2TQTIG8xUqLbwSMk-4s3PL1rWJ6pl1PFkW8NsKDWX9Irlog16-H9d&v=404">
+                                            <em>【米发购物】良品铺子 手造麻薯 爆浆糕点 零食大
+                                                <font class="skcolor_ljg">礼包</font>
+                                                组合150g*7袋</em> 
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">171937</span>
+                                        人评价
+                                    </div>
+                                </li>
+                                <li onclick="searchlog(1,1110182,3,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTk0MzIxMDVfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xMTEwMTgyLmh0bWw&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDoTrG874EawoAB3eP5UZ1kzbkf2BJTIUDeZTSSpXdPh0Syg_jGsRECbPSTmJkngaw83hegarhtR8AQ4uqvE8GnzV2ZdCov4rbnQYJEdXKrEepoa_XEB-Umo5ysTOa552fPNtGbvohEcfs40tP8ZJsZITH8cKSaS0lXtXzPqoBT0HcPd7-B1Lqwy4EVnjuu6s4Y1oo8SsWEj7NgKO3dr8_5sEVtn9dwCQGTA_gtJkx4O6OT8CFM8EEIe6h8Tw1i1ENkJo3S7EcYpDuhWpFcnp8W3NFd3LGYIZY29u4Rh8xYqknVerCMqWgpbpGBpyZrUYgCaq0b2m6tRTYkxYISBs6Bt&v=404">
+                                            <img width="160" height="160" data-img="1" data-lazy-img src="images/shipinsousuo/ggsp4.jpg" class="err-product">
+                                            <img src="https://im-x.jd.com/dsp/np?log=/8+rEV1WYd1z+J1wKOH2QkbKNDAa32RD1/zf/bXmlDoTrG874EawoAB3eP5UZ1kzbkf2BJTIUDeZTSSpXdPh0Syg/jGsRECbPSTmJkngaw83hegarhtR8AQ4uqvE8GnzV2ZdCov4rbnQYJEdXKrEepoa/XEB+Umo5ysTOa552fPNtGbvohEcfs40tP8ZJsZIEgzwCYf5abVtwlg0neuYOhBSfdeAFm4sUiUuUl0wJgjJoNfgnRgv3hy2n0q/EB02PBrcaKdTkY02ulTxK1nLTU+pfwn08DRhZVPyy87DqK7lu/To+8E8X1g1gGIROgTfBWVfO73+Ek+kgzYOz9Y3+izxIeSbxthZnPZirTdXHpCDx9NLGvoPAXrsOAfC94ID74QCGkT2wMEUMju3t9MNRA==&v=404" class="J_adv_tuiguang_exposal" style="display:none;"></a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1110182" data-adv="1">
+                                            <em>¥</em>
+                                            <i>19.30</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTk0MzIxMDVfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xMTEwMTgyLmh0bWw&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDoTrG874EawoAB3eP5UZ1kzbkf2BJTIUDeZTSSpXdPh0Syg_jGsRECbPSTmJkngaw83hegarhtR8AQ4uqvE8GnzV2ZdCov4rbnQYJEdXKrEepoa_XEB-Umo5ysTOa552fPNtGbvohEcfs40tP8ZJsZITH8cKSaS0lXtXzPqoBT0HcPd7-B1Lqwy4EVnjuu6s4Y1oo8SsWEj7NgKO3dr8_5sEVtn9dwCQGTA_gtJkx4O6OT8CFM8EEIe6h8Tw1i1ENkJo3S7EcYpDuhWpFcnp8W3NFd3LGYIZY29u4Rh8xYqknVerCMqWgpbpGBpyZrUYgCaq0b2m6tRTYkxYISBs6Bt&v=404">
+                                            <em>【米发购物】奥利奥（Oreo） 巧克棒 提拉米苏味 256g(新老包装随机发货)</em>
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">82895</span>
+                                        人评价
+                                    </div>
+                                </li>
+                                <li onclick="searchlog(1,1475759222,4,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTc3NzUzMjlfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xNDc1NzU5MjIyLmh0bWw&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDprCoQc9g4UuSNft0Qk0HdrGZSuQ-_VlitEtJUC9YiWZYOLaLw0LesmvD2pw7xnfTvzo2XgyYcZwdIfVU5OjkzFfiWh0suiubKhJujQ96e-flFGjfE59Chrtb1eAJwybDbN21Ta78MJWUGSDxPTjM7Pg2J090Px0cf6Pvno692J9x0_zEqeNLRmn4t_R_l6qOtVfAgmNke28fYpQH2diVLVa6Xfx5T5jvwzxq2iH5wDoFCo_7XVUQTdYsRS0CSlGu7TCdzlLNNF2yxKfmaVo9JkIjRA5KXeXKVimr82Vd2-MdJ-077F5d8EB73IYyNOeYg_hAIfavnDMerNRT8C5zfh&v=404">
+                                            <img width="160" height="160" data-img="1" data-lazy-img src="images/shipinsousuo/ggsp5.jpg" class="err-product">
+                                            <img src="https://im-x.jd.com/dsp/np?log=/8+rEV1WYd1z+J1wKOH2QkbKNDAa32RD1/zf/bXmlDprCoQc9g4UuSNft0Qk0HdrGZSuQ+/VlitEtJUC9YiWZYOLaLw0LesmvD2pw7xnfTvzo2XgyYcZwdIfVU5OjkzFfiWh0suiubKhJujQ96e+flFGjfE59Chrtb1eAJwybDbN21Ta78MJWUGSDxPTjM7PKDSMJdAAlpZNVGbNSFoINE0CBULy3fGHo0xvGbwOTY8cU2n1IX2bmSg/jelSYvVrTjHgEiTdLu2lBaLuSj8JToaF7zD8NFb5hspUm1OExB11zjs2yhSVm+Rfab6w59tTNlzGlMAT7Vlh3/gjUhaab4yl3V7Jna7yMc+dQB/TYJZ6BYbvm0zkgPZnFHqMqn6P&v=404" class="J_adv_tuiguang_exposal" style="display:none;"></a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_1475759222" data-adv="1">
+                                            <em>¥</em>
+                                            <i>19.80</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTc3NzUzMjlfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xNDc1NzU5MjIyLmh0bWw&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDprCoQc9g4UuSNft0Qk0HdrGZSuQ-_VlitEtJUC9YiWZYOLaLw0LesmvD2pw7xnfTvzo2XgyYcZwdIfVU5OjkzFfiWh0suiubKhJujQ96e-flFGjfE59Chrtb1eAJwybDbN21Ta78MJWUGSDxPTjM7Pg2J090Px0cf6Pvno692J9x0_zEqeNLRmn4t_R_l6qOtVfAgmNke28fYpQH2diVLVa6Xfx5T5jvwzxq2iH5wDoFCo_7XVUQTdYsRS0CSlGu7TCdzlLNNF2yxKfmaVo9JkIjRA5KXeXKVimr82Vd2-MdJ-077F5d8EB73IYyNOeYg_hAIfavnDMerNRT8C5zfh&v=404">
+                                            <em>麦吉士切片蛋糕 杨幂代言 原味果丁味红枣味 500g独立小包 营养早餐 红枣味</em>
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">4426</span>
+                                        人评价
+                                    </div>
+                                </li>
+                                <li onclick="searchlog(1,10348137003,5,81)">
+                                    <div class="p-img">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTk2MTkyNDlfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xMDM0ODEzNzAwMy5odG1s&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDqeuxF6-5tc6yv8BFDRqEEyEl6GkG8r0S67Hc-ltDX_6VS37yW7b_ZxvdeZ2Vp9O2sTaNA9VQMOcveXhQGieROgF_iHLkHGlsTYGJk1snd7EAq7VRIXG6-NdIhH-98F-Il0Nov-NYJYyS6QKOoONFNAKcO3aUwr83QJfm0RrWmLHxiaCKoHPc_uoyI2CSzCFX4CVWv2y56a5w2NAUDjq14b2XdvgldK0fQsM70YkmW31ZIbP8YzygPyYvrbOydlBPXw_FTwAK5wLqLCxng_Dyd-NUepgolZWvXOSlZCQ7a8mIZjD4wYWVMqYQwhgiJRuDPlMHpEapUkC54T8nNKrji3qw3lAXrS45dmUEenA6r0bg&v=404">
+                                            <img width="160" height="160" data-img="1" data-lazy-img src="images/shipinsousuo/ggsp6.jpg" class="err-product">
+                                            <img src="https://im-x.jd.com/dsp/np?log=/8+rEV1WYd1z+J1wKOH2QkbKNDAa32RD1/zf/bXmlDqeuxF6+5tc6yv8BFDRqEEyEl6GkG8r0S67Hc+ltDX/6VS37yW7b/ZxvdeZ2Vp9O2sTaNA9VQMOcveXhQGieROgF/iHLkHGlsTYGJk1snd7EAq7VRIXG6+NdIhH+98F+Il0Nov+NYJYyS6QKOoONFNAsIT8OmI8SPJneEKkdjkXHqFMfGJ5hoowoSEwDodzSx8CgYkEciewnWjlcgLYHP5OABFI6smHX0v5sFPFB27GgT53ftdq+kwK99yICPBjJlcmoGtutSd8Rj6VTK46ddG8/QsYAAncT1miClpgVrT+QgH3wY06i1VpLyPrcQkCK2Ebsc0go8HMD6hZ4Af1uVwLTHPrk+TS+29Nw/EfXilrPg==&v=404" class="J_adv_tuiguang_exposal" style="display:none;"></a>
+                                    </div>
+                                    <div class="p-price">
+                                        <strong class="J_10348137003" data-adv="1">
+                                            <em>¥</em>
+                                            <i>129.00</i>
+                                        </strong>
+                                    </div>
+                                    <div class="p-name">
+                                        <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=Y2xpY2sueC5qZC5jb20vSmRDbGljay8_eHVpZD01MjAwNyZ4c2l0ZWlkPTk2MTkyNDlfMjkxJnRvPWh0dHA6Ly9pdGVtLmpkLmNvbS8xMDM0ODEzNzAwMy5odG1s&log=_8-rEV1WYd1z-J1wKOH2QkbKNDAa32RD1_zf_bXmlDqeuxF6-5tc6yv8BFDRqEEyEl6GkG8r0S67Hc-ltDX_6VS37yW7b_ZxvdeZ2Vp9O2sTaNA9VQMOcveXhQGieROgF_iHLkHGlsTYGJk1snd7EAq7VRIXG6-NdIhH-98F-Il0Nov-NYJYyS6QKOoONFNAKcO3aUwr83QJfm0RrWmLHxiaCKoHPc_uoyI2CSzCFX4CVWv2y56a5w2NAUDjq14b2XdvgldK0fQsM70YkmW31ZIbP8YzygPyYvrbOydlBPXw_FTwAK5wLqLCxng_Dyd-NUepgolZWvXOSlZCQ7a8mIZjD4wYWVMqYQwhgiJRuDPlMHpEapUkC54T8nNKrji3qw3lAXrS45dmUEenA6r0bg&v=404">
+                                            <em>
+                                                韩国进口零食
+                                                <font class="skcolor_ljg">礼包</font>
+                                                中秋礼盒 女朋友生日礼物儿童节日零食中秋精品韩国零食大
+                                                <font class="skcolor_ljg">礼包</font>
+                                                送玫瑰香皂
+                                                <font class="skcolor_ljg">包邮</font>
+                                            </em>
+                                        </a>
+                                    </div>
+                                    <div class="p-comm" style="padding:8px 10px 0">
+                                        已有
+                                        <span style="color:#005aa0">456</span>
+                                        人评价
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="J_recommendGoods" class="ab-goods">
+                        <div class="mt">
+                            <h3>精品推荐</h3>
+                        </div>
+                        <div class="mc"></div>
+                    </div>
+                    <div class="promo-pic-adbox" style="display:none;">
+                        <h5 class="hd">商家精选</h5>
+                        <div class="bd">
+                            <div id="J_promWrap_576">
+                                <div class="mc"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="miaozhen8148" class="ab-pic"></div>
+                </div>
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+</div>
+<div id="footer_wrap" class="comWidth clearfix">
+    <div id="footerIcon">
+        <a href="#" target="_blank">
+            <img src="images/footer/footerIcon1.png">
+            <b>正品保障</b>
+            <span>正品行货放心选购</span>
+        </a>
+        <a href="#" target="_blank">
+            <img src="images/footer/footerIcon2.png">
+            <b>满68包邮</b>
+            <span>满68元 免运费</span>
+        </a>
+        <a href="#" target="_blank">
+            <img src="images/footer/footerIcon3.png">
+            <b>售后无忧</b>
+            <span>7天无理由退货</span>
+        </a>
+        <a href="#" target="_blank">
+            <img src="images/footer/footerIcon4.png">
+            <b>准时送达</b>
+            <span>收货时间有你做主</span>
+        </a>
+    </div>
+    <div class="clearfix">
+        <div id="bottomHelp">
+            <dl>
+                <dt>新手入门</dt>
+                <dd>
+                    <a href="#" target="_blank">购物流程</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">会员制度</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">订单查询</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">发票制度</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">常见问题</a>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="#" target="_blank">货到付款</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">网上支付</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">银行转账</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">礼品卡支付</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">其他支付</a>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>配送服务</dt>
+                <dd>
+                    <a href="#" target="_blank">配送范围及运费</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">配送进度查询</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">自提服务</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">商品验货与签收</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>售后保障</dt>
+                <dd>
+                    <a href="#" target="_blank">退换货政策</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">退换货流程</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">退款说明</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">延保说明页面</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">联系客服</a>
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>商家合作</dt>
+                <dd>
+                    <a href="#" target="_blank">商家入驻</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">商必赢</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">平台规则</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank">企业采购</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer_link">
+            <a href="#" target="_blank">关于米发</a>|
+            <a href="#" target="_blank">我们的团队</a>|
+            <a href="#" target="_blank">网站联盟</a>|
+            <a href="#" target="_blank">热门搜索</a>|
+            <a href="#" target="_blank">友情链接</a>|
+            <a href="#" target="_blank">诚征英才</a>|
+            <a href="#" target="_blank">商家登录</a>|
+            <a href="#" target="_blank">供应商登录</a>
+        </p>
+        <p class="footer_link">
+            <a href="#" target="_blank">沪ICP备00000000号</a>|
+            <a href="#" target="_blank">合字B1.B2-20130004</a>|
+            <a href="#" target="_blank">营业执照</a>|
+            <a href="#" target="_blank">互联网药品信息服务资格证</a>|
+            <a href="#" target="_blank">互联网药品交易服务资格证</a>
+        </p>
+        <p>Copyright&copy; 米发网上超市 2015-2016，All Rights Reserved</p>
+        <small id="footerbanner" class="ft_pic_link">
+             <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm1.gif" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm2.jpg" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm3.gif" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm4.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm5.gif" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm6.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm7.jpg" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/footer/footeri_sm8.jpg" alt="">
+            </a>
+        </small>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/myjs.js"></script>
+<script type="text/javascript" src="js/product-search.js"></script>
+</html>
